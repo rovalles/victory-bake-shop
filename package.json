@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rovalles/victory-bake-shop#readme",
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
   }
 }
