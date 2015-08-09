@@ -1,6 +1,13 @@
+$color-primary: '225,39,39';
+//$color-primary-dark: unquote("darken(rgb(#{$color-primary}), 50%)");
+$color-accent: '121,85,72';
+$color-primary-contrast: '121,85,72';
+//$color-accent-contrast: darken($color-accent, 20%);
+
 @import "../bower_components/material-design-lite/src/material-design-lite-grid.scss";
 @import "../bower_components/material-design-lite/src/material-design-lite.scss";
 
 .mdl-card{
 	margin: 0 auto;
 }
+
