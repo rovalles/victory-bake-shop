@@ -1,13 +1,84 @@
-$color-primary: '225,39,39';
-//$color-primary-dark: unquote("darken(rgb(#{$color-primary}), 50%)");
-$color-accent: '121,85,72';
-$color-primary-contrast: '121,85,72';
-//$color-accent-contrast: darken($color-accent, 20%);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-@import "../bower_components/material-design-lite/src/material-design-lite-grid.scss";
-@import "../bower_components/material-design-lite/src/material-design-lite.scss";
+body {
+	font-family: sans-serif;
+	font-size: 1.25em;
+	line-height: 1.2;
+	background-color: #fff;
+	margin: 0 20px;
+}
 
-.mdl-card{
+h1, h2, h3, a {
+	color: #e12727;
+}
+
+h1 a {
+	border: none;
+}
+
+h2, p {
+	margin-bottom: 1em;
+}
+
+img {
+	max-width: 90%;
+	display: block;
+	margin: 0 auto 1em;
+}
+
+.container {
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
+.header {
+	padding: 20px 0 10px;
+	margin-bottom: 25px;
+	height: 95px;
+	text-align: center;
+}
+
+.logo {
+	max-width: 320px;
+}
+
+h1 a, h1 img {
+	border: none;
+	text-decoration: none;
+}
+
+.main a {
+	text-decoration: none;
+	border: 0 solid #e12727;
+	border-bottom-width: 1px;
+}
+
+.main a:hover {
+	border-bottom: none;
+}
+
+
+@media only screen and (min-width: 640px) {
+
+	.main {
+		margin-top: 3em;
+		background-color: rgba(255,255,255,0.8);
+		padding: 1em;
+	}
+
+	.let9 .main {
+		background:transparent;
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90FFFFFF,endColorstr=#90FFFFFF); 
+       	zoom: 1;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.logo {
+		width: 100%;
+	}
+}
