@@ -22,7 +22,7 @@
 				proxy: 'localhost:8000'
 			});
 		});
-		gulp.watch('**/*.php').on('change', function () {
+		gulp.watch(['**/*.php', './assets/**/*']).on('change', function () {
 			browserSync.reload();
 		});
 	});
