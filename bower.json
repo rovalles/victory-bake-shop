@@ -1,0 +1,19 @@
+{
+  "name": "victory-bake-shop",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rovalles/victory-bake-shop",
+  "authors": [
+    "Rodolfo Ovalles <ro3014@att.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "~1.0.2"
+  }
+}
