@@ -17,67 +17,70 @@
 	</head>
 	<body>
 		<div class="container">
-		<header class="header">
-			<h1>
-				<a href="/">
-					<img class="logo" src="assets/images/logo.png" alt="Victory Bake Shop">
-				</a>
-			</h1>
-		</header>
-		<main>
-			<section class="cakes">
-				<h2 class="title">Cakes and cupcakes for weddings, birthdays, special occasions and more.</h2>
-				<script id="template" type="x-tmpl-mustache">
-					{{#data}}
-						<div class="mdl-card mdl-shadow--2dp demo-card-wide">
-							<img src="{{images.standard_resolution.url}}" />
-							<p>{{caption.text}}</p>
-							<div class="mdl-card__actions mdl-card--border">
-								Get Started
-							</div>
+			<header class="header">
+				<h1>
+					<a href="/">
+						<img class="logo" src="assets/images/logo.png" alt="Victory Bake Shop">
+					</a>
+				</h1>
+			</header>
+			<main>
+				<section class="cakes">
+					<h2 class="title">Cakes and cupcakes for weddings, birthdays, special occasions and more.</h2>
+					<div class="gallery">
+						<script id="template" type="x-tmpl-mustache">
+							{{#data}}
+								<div class="panel">
+									<div class="inner-panel box-shadow">
+										<img src="{{images.standard_resolution.url}}" />
+										{{#caption.text}}
+											<p>{{caption.text}}</p>
+										{{/caption.text}}
+									</div>
+								</div>
+							{{/data}}
+						</script>
+					</div>
+				</section>
+				<div class="about">
+					<p>Victory Bake Shop is a work in progress. I pay very close attention to detail and I feel it's the small precise details that set my cakes apart from the rest. I would be honored to be your baker and create memorable personalized desserts for all those special celebrations in your life</p>
+					<p>Contact Crissy for more information.</p>
+					<p><a class="email" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></p>
+				</div>
+				<section class="contact">
+					<form action="contact.php" id="contactForm" method="POST">
+						<div>
+							<input type="hidden" name="extra">
 						</div>
-					{{/data}}
-				</script>
-			</section>
-			<div class="about">
-				<p>Victory Bake Shop is a work in progress. I pay very close attention to detail and I feel it's the small precise details that set my cakes apart from the rest. I would be honored to be your baker and create memorable personalized desserts for all those special celebrations in your life</p>
-				<p>Contact Crissy for more information.</p>
-				<p><a class="email" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></p>
-			</div>
-			<section class="contact">
-				<form action="contact.php" id="contactForm" method="POST">
-					<div>
-						<input type="hidden" name="extra">
-					</div>
-					<div>
-						<label for="name">Name</label>
-					</div>
-					<div>
-						<input name="name" type="text" required>
-					</div>
-					<div>
-						<label for="email">Email Address</label>
-					</div>
-					<div>
-						<input name="email" type="email" placeholder="johndoe@test.com" required>
-					</div>
-					<div>
-						<label for="message">What can make for you?</label>
-					</div>
-					<div>
-						<textarea name="message" cols="25" rows="10" spellcheck="true" required></textarea>
-					</div>
-					<div>
-						<label for="due-date">When do you need it?</label>
-					</div>
-					<div>
-						<input name="due-date" type="date" required\>
-					</div>
-					<input class="btn" type="submit" value="Send Form">
-				</form>
-			</section>
-		</main>
-	</div>
+						<div>
+							<label for="name">Name</label>
+						</div>
+						<div>
+							<input name="name" type="text" required>
+						</div>
+						<div>
+							<label for="email">Email Address</label>
+						</div>
+						<div>
+							<input name="email" type="email" placeholder="johndoe@test.com" required>
+						</div>
+						<div>
+							<label for="message">What can make for you?</label>
+						</div>
+						<div>
+							<textarea name="message" cols="25" rows="10" spellcheck="true" required></textarea>
+						</div>
+						<div>
+							<label for="due-date">When do you need it?</label>
+						</div>
+						<div>
+							<input name="due-date" type="date" required\>
+						</div>
+						<input class="btn" type="submit" value="Send Form">
+					</form>
+				</section>
+			</main>
+		</div>
 	</body>
 	<script src="bower_components/material-design-lite/material.min.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
