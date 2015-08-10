@@ -27,6 +27,19 @@
 		<main>
 			<section class="about">
 				<h2 class="title">Cakes and cupcakes for weddings, birthdays, special occasions and more.</h2>
+				<script id="template" type="x-tmpl-mustache">
+					{{#data}}
+						<div class="mdl-card mdl-shadow--2dp demo-card-wide">
+							<img src="{{images.standard_resolution.url}}" />
+							<p>{{caption.text}}</p>
+							<div class="mdl-card__actions mdl-card--border">
+								Get Started
+							</div>
+						</div>
+					{{/data}}
+				</script>
+
+
 				<div class="cakes">
 					<p>Victory Bake Shop is a work in progress. I pay very close attention to detail and I feel it's the small precise details that set my cakes apart from the rest. I would be honored to be your baker and create memorable personalized desserts for all those special celebrations in your life</p>
 					<p>Contact Crissy for more information.</p>
@@ -70,6 +83,6 @@
 	</body>
 	<script src="bower_components/material-design-lite/material.min.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/mustache.min.js/mustache.min.js"></script>
+	<script src="bower_components/mustache.js/mustache.min.js"></script>
 	<script src="assets/scripts/main.js"></script>
 </html>
