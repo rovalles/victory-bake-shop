@@ -25,7 +25,7 @@
 			</h1>
 		</header>
 		<main>
-			<section class="about">
+			<section class="cakes">
 				<h2 class="title">Cakes and cupcakes for weddings, birthdays, special occasions and more.</h2>
 				<script id="template" type="x-tmpl-mustache">
 					{{#data}}
@@ -38,14 +38,12 @@
 						</div>
 					{{/data}}
 				</script>
-
-
-				<div class="cakes">
-					<p>Victory Bake Shop is a work in progress. I pay very close attention to detail and I feel it's the small precise details that set my cakes apart from the rest. I would be honored to be your baker and create memorable personalized desserts for all those special celebrations in your life</p>
-					<p>Contact Crissy for more information.</p>
-					<p><a class="email" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></p>
-				</div>
 			</section>
+			<div class="about">
+				<p>Victory Bake Shop is a work in progress. I pay very close attention to detail and I feel it's the small precise details that set my cakes apart from the rest. I would be honored to be your baker and create memorable personalized desserts for all those special celebrations in your life</p>
+				<p>Contact Crissy for more information.</p>
+				<p><a class="email" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></p>
+			</div>
 			<section class="contact">
 				<form action="contact.php" id="contactForm" method="POST">
 					<div>
