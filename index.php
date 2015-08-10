@@ -17,14 +17,14 @@
 		<![endif]-->
 	</head>
 	<body>
+		<header class="header box-shadow">
+			<h1>
+				<a href="/">
+					<img class="logo" src="assets/images/logo.png" alt="Victory Bake Shop">
+				</a>
+			</h1>
+		</header>
 		<div class="container">
-			<header class="header">
-				<h1>
-					<a href="/">
-						<img class="logo" src="assets/images/logo.png" alt="Victory Bake Shop">
-					</a>
-				</h1>
-			</header>
 			<main>
 				<section class="cakes">
 					<h2 class="title">Cakes and cupcakes for weddings, birthdays, special occasions and more.</h2>
