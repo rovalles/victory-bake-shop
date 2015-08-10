@@ -48,9 +48,12 @@
 				</section>
 				<div class="about">
 					<p>Victory Bake Shop is a work in progress. I pay very close attention to detail and I feel it's the small precise details that set my cakes apart from the rest. I would be honored to be your baker and create memorable personalized desserts for all those special celebrations in your life</p>
-					<p>Contact Crissy for more information.</p>
 				</div>
+				
+				<h3>Contact</h3>
+
 				<div class="connect">
+					<p>Contact Crissy for more information.</p>
 					<ul>
 						<li><a class="email" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></li>
 						<li><a class="instagram" href="https://instagram.com/victoryisinthekitchen/" target="_blank">victoryisinthekitchen</a></li>
@@ -62,18 +65,18 @@
 							<input type="hidden" name="extra">
 						</div>
 						<div>
-							<input name="name" type="text" placeholder="Full Name" required>
+							<input name="name" type="text" placeholder="Full Name" class="box-shadow" required>
 						</div>
 						<div>
-							<input name="email" type="email" placeholder="johndoe@test.com" required>
+							<input name="email" type="email" placeholder="johndoe@test.com"  class="box-shadow" required>
 						</div>
 						<div>
-							<textarea placeholder="Message" name="message" cols="25" rows="10" spellcheck="true" required></textarea>
+							<textarea placeholder="Message" name="message" cols="25" rows="10"  class="box-shadow" spellcheck="true" required></textarea>
 						</div>
 						<div>
-							<input name="due-date" type="date" placeholder="When do you need it?" required />
+							<input name="due-date" type="date" placeholder="When do you need it?" class="box-shadow" required />
 						</div>
-						<button class="btn submit" type="submit" value="Submit">Submit</button>
+						<button class="btn submit box-shadow" type="submit" value="Submit">Submit</button>
 					</form>
 				</section>
 			</main>
