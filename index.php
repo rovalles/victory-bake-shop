@@ -10,6 +10,7 @@
 		<meta charset="UTF-8">
 		<title>Victory Bake Shop</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--link rel="stylesheet" href="bower_components/material-design-lite/material.min.css"-->
 		<link rel="stylesheet" href="assets/styles/main.css">
 		<!--[if lt IE 9]>
 				<script src="html5shiv.js"></script>
@@ -32,6 +33,9 @@
 							{{#data}}
 								<div class="panel">
 									<div class="inner-panel box-shadow">
+										<div class="likes hearts box-shadow">
+											{{likes.count}}
+										</div>
 										<img src="{{images.standard_resolution.url}}" />
 										{{#caption.text}}
 											<p>{{caption.text}}</p>
@@ -81,6 +85,9 @@
 				</section>
 			</main>
 		</div>
+		<footer>
+
+		</footer>
 	</body>
 	<script src="bower_components/material-design-lite/material.min.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
