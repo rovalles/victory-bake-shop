@@ -8,6 +8,7 @@ $(function(){
 
 	$.ajax({
 		method: 'GET',
+		dataType: "jsonp",
 		url: 'https://api.instagram.com/v1/users/' + config.user_id + '/media/recent/?client_id=' + config.client_id,
 	}).done(function(data) {
 		var $id = $('#template'),
