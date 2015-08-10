@@ -49,7 +49,12 @@
 				<div class="about">
 					<p>Victory Bake Shop is a work in progress. I pay very close attention to detail and I feel it's the small precise details that set my cakes apart from the rest. I would be honored to be your baker and create memorable personalized desserts for all those special celebrations in your life</p>
 					<p>Contact Crissy for more information.</p>
-					<p><a class="email" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></p>
+				</div>
+				<div class="connect">
+					<ul>
+						<li><a class="email" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></li>
+						<li><a class="instagram" href="https://instagram.com/victoryisinthekitchen/" target="_blank">victoryisinthekitchen</a></li>
+					</ul>
 				</div>
 				<section class="contact">
 					<form action="contact.php" id="contactForm" method="POST">
@@ -57,30 +62,18 @@
 							<input type="hidden" name="extra">
 						</div>
 						<div>
-							<label for="name">Name</label>
-						</div>
-						<div>
-							<input name="name" type="text" required>
-						</div>
-						<div>
-							<label for="email">Email Address</label>
+							<input name="name" type="text" placeholder="Full Name" required>
 						</div>
 						<div>
 							<input name="email" type="email" placeholder="johndoe@test.com" required>
 						</div>
 						<div>
-							<label for="message">What can make for you?</label>
+							<textarea placeholder="Message" name="message" cols="25" rows="10" spellcheck="true" required></textarea>
 						</div>
 						<div>
-							<textarea name="message" cols="25" rows="10" spellcheck="true" required></textarea>
+							<input name="due-date" type="date" placeholder="When do you need it?" required />
 						</div>
-						<div>
-							<label for="due-date">When do you need it?</label>
-						</div>
-						<div>
-							<input name="due-date" type="date" required\>
-						</div>
-						<input class="btn" type="submit" value="Send Form">
+						<button class="btn submit" type="submit" value="Submit">Submit</button>
 					</form>
 				</section>
 			</main>

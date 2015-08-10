@@ -68,8 +68,14 @@ h1 a, h1 img {
 	border-bottom: none;
 }
 
+.cakes{
+	margin-top: 200px;
+}
+
 .gallery{
-	margin: 100px -10px 0 -10px;
+	margin: 0px -10px 0 -10px;
+	clear: both;
+	overflow: hidden;
 }
 
 footer{
@@ -79,16 +85,53 @@ footer{
 	clear: both;	
 }
 
-@media only screen and (min-width: 640px) {
+$red: #e12727;
 
-	.about, .contact {
-		float: left;
-		width: 50%;
-		padding: 1em;
+.connect{ 
+	a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 
-	.contact {
-		border: 1px solid #333;
+	li{
+		margin-bottom: 10px;
+	}
+}
+
+.contact{
+	input, .submit, textarea{
+		color: $red;
+    margin: 0 0 15px;
+    border: 1px solid $red;
+    padding: 9px 10px;
+	}
+
+	textarea{
+		width: 100%;
+	}
+
+	input{
+    font-size: 15px;
+    width: 100%;
+	}
+
+	.submit{
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 10px;
+		background: #fff;
+		border: 1px solid $red;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+
+	.connect, .contact {
+		float: left;
+		width: 50%;
 	}
 
 	.main {
