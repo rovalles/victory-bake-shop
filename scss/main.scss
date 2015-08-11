@@ -9,7 +9,7 @@ $red: #e12727;
 }
 
 body {
-	font-family: sans-serif;
+	font-family: helvetica;
 	font-size: 1.25em;
 	line-height: 1.2;
 	background-color: #ebe9eb;
@@ -23,7 +23,7 @@ h1 a {
 	border: none;
 }
 
-h2, p {
+p {
 	margin-bottom: 1em;
 }
 
@@ -70,7 +70,7 @@ h1 a, h1 img {
 	border-bottom: none;
 }
 
-.cakes{
+.intro{
 	margin-top: 200px;
 }
 
@@ -110,12 +110,19 @@ footer{
 	}
 }
 
-h3{
-	font-size: 60px;
-	border-bottom: 2px solid #e12727;
+h2, h3{
+	font-size: 40px;
+	font-weight: lighter;
+	border-bottom: 1px solid #e12727;
 	padding: 0 0px 10px 0;
-	margin: 0 60px 20px 0;
+	margin: 0 0 20px 0;
 }
+
+h3{
+	margin-right: 60px;
+}
+
+
 
 .contact{
 	input, .submit, textarea{

@@ -26,26 +26,27 @@
 		</header>
 		<div class="container">
 			<main>
-				<section class="cakes">
-					<h2 class="title">Cakes and cupcakes for weddings, birthdays, special occasions and more.</h2>
-					<div class="gallery">
-						<script id="template" type="x-tmpl-mustache">
-							{{#data}}
-								<div class="panel">
-									<div class="inner-panel box-shadow">
-										<div class="likes hearts box-shadow">
-											{{likes.count}}
-										</div>
-										<img src="{{images.standard_resolution.url}}" />
-										{{#caption.text}}
-											<p>{{caption.text}}</p>
-										{{/caption.text}}
-									</div>
-								</div>
-							{{/data}}
-						</script>
-					</div>
+				<section class="intro">
+					<h2>What I do</h2>
+					<p>Cakes and cupcakes for weddings, birthdays, special occasions and more.</p>
 				</section>
+				<div class="gallery">
+					<script id="template" type="x-tmpl-mustache">
+						{{#data}}
+							<div class="panel">
+								<div class="inner-panel box-shadow">
+									<div class="likes hearts box-shadow">
+										{{likes.count}}
+									</div>
+									<img src="{{images.standard_resolution.url}}" />
+									{{#caption.text}}
+										<p>{{caption.text}}</p>
+									{{/caption.text}}
+								</div>
+							</div>
+						{{/data}}
+					</script>
+				</div>
 				
 				<div class="connect">
 					<h3>Contact</h3>
