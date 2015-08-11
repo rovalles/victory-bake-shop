@@ -47,13 +47,13 @@
 					</div>
 				</section>
 				
-				<h3>Contact</h3>
 				<div class="connect">
+					<h3>Contact</h3>
 					<p>Contact Crissy for more information.</p>
 					<p>Victory Bake Shop is a work in progress. I pay very close attention to detail and I feel it's the small precise details that set my cakes apart from the rest.<br /><br /> I would be honored to be your baker and create memorable personalized desserts for all those special celebrations in your life.</p>
 					<ul>
-						<li><a class="email" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></li>
-						<li><a class="instagram" href="https://instagram.com/victoryisinthekitchen/" target="_blank">victoryisinthekitchen</a></li>
+						<li><a class="icon email icon-envelop" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></li>
+						<li><a class="icon instagram icon-instagram" href="https://instagram.com/victoryisinthekitchen/" target="_blank">victoryisinthekitchen</a></li>
 					</ul>
 				</div>
 				<section class="contact">
