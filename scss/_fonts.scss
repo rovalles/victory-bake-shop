@@ -23,9 +23,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-envelop:before {
-	content: "\e600";
-}
-.icon-instagram:before {
-	content: "\e601";
-}
+.icon-anniversary:before { content: '\e800'; } /* '' */
+.icon-birthday:before { content: '\e801'; } /* '' */
+.icon-cookies:before { content: '\e802'; } /* '' */
+.icon-rings:before { content: '\e803'; } /* '' */
+.icon-two:before { content: '\e804'; } /* '' */
+.icon-envelop:before { content: '\e805'; } /* '' */
+.icon-instagram:before { content: '\e806'; } /* '' */

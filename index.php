@@ -24,12 +24,11 @@
 				</a>
 			</h1>
 		</header>
+		<section class="intro box-shadow">
+			<p>Cakes and cupcakes for weddings, birthdays,<br /> special occasions and more.</p>
+		</section>
 		<div class="container">
 			<main>
-				<section class="intro">
-					<h2>What I do</h2>
-					<p>Cakes and cupcakes for weddings, birthdays, special occasions and more.</p>
-				</section>
 				<div class="gallery">
 					<script id="template" type="x-tmpl-mustache">
 						{{#data}}
