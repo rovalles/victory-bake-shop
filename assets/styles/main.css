@@ -103,8 +103,12 @@ body {
   background-color: #ebe9eb;
   padding-top: 130px;
   padding-bottom: 20px; }
-  body.no-scroll {
-    overflow: hidden !important; }
+
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed; }
 
 h1, h2, h3, a {
   color: #e12727; }

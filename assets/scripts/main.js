@@ -21,7 +21,7 @@ $(function(){
 		$id.replaceWith(rendered);
 	});
 
-	var $body = $('body');
+	var $body = $('html, body');
 	var $footer = $('#footer');
 	var $contactLink = $('#contactLink');
 	var $contactPane = $('.contact');
