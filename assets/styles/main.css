@@ -53,6 +53,9 @@
   @media only screen and (max-width: 800px) {
     .panel {
       width: 50%; } }
+  @media only screen and (max-width: 640px) {
+    .panel {
+      width: 100%; } }
   .panel .inner-panel {
     position: relative;
     overflow: hidden; }
