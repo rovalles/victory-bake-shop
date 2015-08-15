@@ -101,7 +101,10 @@ body {
   font-size: 1.25em;
   line-height: 1.2;
   background-color: #ebe9eb;
-  padding-top: 130px; }
+  padding-top: 130px;
+  padding-bottom: 20px; }
+  body.no-scroll {
+    overflow: hidden !important; }
 
 h1, h2, h3, a {
   color: #e12727; }
@@ -133,7 +136,7 @@ img {
   background: rgba(255, 255, 255, 0.95);
   overflow: hidden;
   position: fixed;
-  z-index: 9; }
+  z-index: 3; }
   .header h1 {
     margin-top: 10px; }
   .header ul {
@@ -198,23 +201,52 @@ h1 a, h1 img {
 
 footer {
   width: 100%;
-  height: 10px;
-  background: #e12727; }
+  background: #e12727;
+  position: fixed;
+  bottom: 0;
+  padding: 5px;
+  color: #fff;
+  z-index: 4;
+  overflow-y: scroll; }
+  footer h3 {
+    color: #fff; }
+  footer a {
+    color: #fff;
+    text-decoration: none; }
+  footer .contact, footer .about {
+    display: none;
+    padding-top: 10px; }
+  footer nav {
+    text-align: center; }
+    footer nav li {
+      display: inline-block;
+      list-style: none; }
+    footer nav a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 3px 10px;
+      background-color: #a51717;
+      border-radius: 5px; }
+    footer nav .close-footer {
+      float: right;
+      display: none; }
 
-.connect .icon:before {
+.contact .icon:before, .about .icon:before {
   margin-right: 10px;
   font-size: 16px; }
 
-.connect p {
+.contact p, .about p {
   font-size: 16px;
   margin-right: 65px; }
 
-.connect a {
+.contact a, .about a {
   text-decoration: none; }
-  .connect a:hover {
+  .contact a:hover, .about a:hover {
     text-decoration: underline; }
 
-.connect li {
+.contact li, .about li {
   margin-bottom: 10px;
   list-style: none; }
 

@@ -46,40 +46,47 @@
 						{{/data}}
 					</script>
 				</div>
-				
-				<div class="connect">
-					<h3>Contact</h3>
-					<p>Contact Crissy for more information.</p>
-					<p>Victory Bake Shop is a work in progress. I pay very close attention to detail and I feel it's the small precise details that set my cakes apart from the rest.<br /><br /> I would be honored to be your baker and create memorable personalized desserts for all those special celebrations in your life.</p>
-					<ul>
-						<li><a class="icon email icon-envelop" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></li>
-						<li><a class="icon instagram icon-instagram" href="https://instagram.com/victoryisinthekitchen/" target="_blank">victoryisinthekitchen</a></li>
-					</ul>
-				</div>
-				<section class="contact">
-					<form action="contact.php" id="contactForm" method="POST">
-						<div>
-							<input type="hidden" name="extra">
-						</div>
-						<div>
-							<input name="name" type="text" placeholder="Full Name" class="box-shadow" required>
-						</div>
-						<div>
-							<input name="email" type="email" placeholder="johndoe@test.com"  class="box-shadow" required>
-						</div>
-						<div>
-							<textarea placeholder="Message" name="message" cols="25" rows="10"  class="box-shadow" spellcheck="true" required></textarea>
-						</div>
-						<div>
-							<input name="due-date" type="date" placeholder="When do you need it?" class="box-shadow" required />
-						</div>
-						<button class="btn submit box-shadow" type="submit" value="Submit">Submit</button>
-					</form>
-				</section>
 			</main>
 		</div>
-		<footer>
-
+		<footer id="footer">
+			<nav>
+				<ul>
+					<li><a href="#contact" id="contactLink">Contact</a></li>
+					<li><a href="#about" id="aboutLink">about</a></li>
+					<li class="close-footer"><a href="#" id="closeFooter">X</a></li>
+				</ul>
+			</nav>
+			<div class="about">
+				<p>Victory Bake Shop is a work in progress. I pay very close attention to detail and I feel it's the small precise details that set my cakes apart from the rest.<br /><br /> I would be honored to be your baker and create memorable personalized desserts for all those special celebrations in your life.</p>
+				<ul style="clear:both">
+					<li><a class="icon email icon-envelop" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></li>
+					<li><a class="icon instagram icon-instagram" href="https://instagram.com/victoryisinthekitchen/" target="_blank">victoryisinthekitchen</a></li>
+				</ul>
+			</div>
+			<section class="contact">
+				<form action="contact.php" id="contactForm" method="POST">
+					<div>
+						<input type="hidden" name="extra">
+					</div>
+					<div>
+						<input name="name" type="text" placeholder="Full Name" class="box-shadow" required>
+					</div>
+					<div>
+						<input name="email" type="email" placeholder="johndoe@test.com"  class="box-shadow" required>
+					</div>
+					<div>
+						<textarea placeholder="Message" name="message" cols="25" rows="10"  class="box-shadow" spellcheck="true" required></textarea>
+					</div>
+					<div>
+						<input name="due-date" type="date" placeholder="When do you need it?" class="box-shadow" required />
+					</div>
+					<button class="btn submit box-shadow" type="submit" value="Submit">Submit</button>
+				</form>
+				<ul style="clear:both">
+					<li><a class="icon email icon-envelop" href="mailto:crissy@victorybakeshop.com" target="_blank">crissy@victorybakeshop.com</a></li>
+					<li><a class="icon instagram icon-instagram" href="https://instagram.com/victoryisinthekitchen/" target="_blank">victoryisinthekitchen</a></li>
+				</ul>
+			</section>
 		</footer>
 	</body>
 	<script src="bower_components/material-design-lite/material.min.js"></script>

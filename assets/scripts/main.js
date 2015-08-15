@@ -14,12 +14,45 @@ $(function(){
 	}).done(function(data) {
 		var $id = $('#template'),
 			template = $id.html();
-		console.log(template);
 
 		Mustache.parse(template);
 
 		var rendered = Mustache.render(template, data);
-	  $id.replaceWith(rendered);
+		$id.replaceWith(rendered);
 	});
+
+	var $body = $('body');
+	var $footer = $('#footer');
+	var $contactLink = $('#contactLink');
+	var $contactPane = $('.contact');
+	var $aboutLink = $('#aboutLink');
+	var $aboutPane = $('.about');
+	var $closeButton = $('.close-footer');
+
+	$contactLink.click(function() {
+		$aboutPane.hide();
+		$contactPane.show();
+		showFooter();
+	});
+
+	$aboutLink.click(function() {
+		$contactPane.hide();
+		$aboutPane.show();
+		showFooter();
+	});
+
+	$closeButton.click(function() {
+		$body.removeClass('no-scroll');
+		$aboutPane.hide();
+		$contactPane.hide();
+		$closeButton.hide();
+		$footer.css({'top': 'auto'});
+	});
+
+	function showFooter() {
+		$body.addClass('no-scroll');
+		$closeButton.show();
+		$footer.css({'top': '130px'});
+	}
 
 });
