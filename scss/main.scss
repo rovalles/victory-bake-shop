@@ -13,6 +13,7 @@ body {
 	font-size: 1.25em;
 	line-height: 1.2;
 	background-color: #ebe9eb;
+	padding-top: 130px;
 }
 
 h1, h2, h3, a {
@@ -88,13 +89,16 @@ h1 a, h1 img {
 }
 
 .intro{
-	margin-top: 130px;
 	background-image: url('/assets/images/background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 35px;
 	height: 200px;
 	width: 100%;
+
+	@media only screen and (max-width: 640px) {
+		display: none;
+	}
 
 	p{
 		color: #fff;
